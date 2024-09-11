@@ -1,0 +1,87 @@
+/* Alumno: Leonardo Daniel Aviña Neri 4PRAM */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Sansita', sans-serif;
+    font-size: 1em;
+}
+
+:root{
+    --button-color: rgb(0, 187, 255);
+    --border-config: 4px solid rgba(0, 0, 0, 0.524);
+}
+
+::first-letter{
+    text-transform: capitalize;
+
+}
+
+header{
+    text-align: center;
+}
+body{
+    background-color: #9cecec;
+}
+
+.title{
+    font-family: 'Alkatra', cursive;
+    font-size: 3em;
+    text-shadow: 0 0 8px gold;
+}
+
+.calculator__container{
+    margin: 30px auto ;
+    width: 450px;
+    height: 500px;
+    background-color: rgba(194, 47, 196, 0.445);
+    border-radius: 1em;
+    border: var(--border-config);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: inset -6px -4px 2px rgba(4, 4, 4, 0.334), 
+    2px 2px 9px 2px rgba(0, 0, 0);
+}
+
+.calculator__result{
+    margin-top: 15px;
+    resize: none;
+    border-radius: 0.3em;
+    width: 100%;
+    font-family: monospace;
+    height: 50px;
+    font-size: 2.8em;
+    padding-left: 14px;
+    outline: var(--border-config);
+    color: rgb(3, 114, 3);
+    margin-bottom: 16px;
+    overflow: auto;
+}
+
+.btn{
+    --border-config: 4px solid rgba(0, 0, 0, 0.668);
+    width: 90px;
+    height: 90px;
+    background-color: var(--button-color);
+    margin: 4px;
+    border: var(--border-config);
+    border-radius: .5em;
+    text-align: center;
+    line-height: 80px;
+    font-style: bolder;
+    box-shadow: inset -6px -4px 2px rgba(4, 4, 4, 0.334), 
+    0 0 4px 2px rgba(0, 0, 0);
+    font-size: 2em;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+#btnClear{
+    --button-color: rgba(237, 52, 15, 0.911);
+}
+
